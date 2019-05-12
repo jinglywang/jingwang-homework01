@@ -47,5 +47,15 @@ namespace homework01
 				btnSubmit.IsEnabled = false;
 		    }
 		}
+
+		private void btnSubmit_Click(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Submitting password:" + uxPassword.Text);
+
+			var window = new SecondWindow();
+			Application.Current.MainWindow = window;
+			Close();
+			window.Show();
+		}
 	}
 }

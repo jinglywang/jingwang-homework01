@@ -5,13 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:homework01"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="349.432" Width="687.5">
+    <Grid Margin="0,0,2.8,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
         <Label x:Name="label" Content="User Name" HorizontalAlignment="Left" Margin="33,36,0,0" VerticalAlignment="Top" Height="26" Width="69"/>
         <TextBox x:Name="uxUserName" HorizontalAlignment="Left" Height="26" Margin="166,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="391" TextChanged="uxUserName_TextChanged"/>
         <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="33,123,0,0" VerticalAlignment="Top" Height="26" Width="59"/>
         <TextBox x:Name="uxPassword" HorizontalAlignment="Left" Height="26" Margin="166,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="392" TextChanged="uxPassword_TextChanged"/>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="166,209,0,0" VerticalAlignment="Top" Width="342" Height="46" IsEnabled="False"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="166,209,0,0" VerticalAlignment="Top" Width="342" Height="46" IsEnabled="False" Click="btnSubmit_Click"/>
 
     </Grid>
 </Window>
